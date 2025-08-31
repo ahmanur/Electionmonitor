@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Election Monitoring Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              'primary-green': '#006442',
+              'accent-gold': '#FFD700',
+              'status-pending-bg': '#fff3cd',
+              'status-pending-text': '#856404',
+              'status-resolved-bg': '#d4edda',
+              'status-resolved-text': '#0f5120',
+              'status-urgent-bg': '#f8d7da',
+              'status-urgent-text': '#721c24',
+              'status-escalated-bg': '#e9d5ff',
+              'status-escalated-text': '#581c87',
+              'status-approved-bg': '#d4edda',
+              'status-approved-text': '#0f5120',
+              'status-issue-bg': '#f8d7da',
+              'status-issue-text': '#721c24',
+            },
+            keyframes: {
+              'fade-in-right': {
+                '0%': { opacity: '0', transform: 'translateX(100%)' },
+                '100%': { opacity: '1', transform: 'translateX(0)' },
+              },
+              'fade-out-right': {
+                '0%': { opacity: '1', transform: 'translateX(0)' },
+                '100%': { opacity: '0', transform: 'translateX(100%)' },
+              },
+            },
+            animation: {
+              'fade-in-right': 'fade-in-right 0.5s ease-out forwards',
+              'fade-out-right': 'fade-out-right 0.5s ease-in forwards',
+            },
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom": "https://aistudiocdn.com/react-dom@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "recharts": "https://aistudiocdn.com/recharts@^3.1.2",
+    "react-icons/": "https://aistudiocdn.com/react-icons@^5.5.0/",
+    "react-icons": "https://aistudiocdn.com/react-icons@^5.5.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <div id="modal-root"></div>
+    <div id="notification-root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

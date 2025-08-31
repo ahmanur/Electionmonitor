@@ -1,0 +1,7 @@
+{
+  "name": "Election Monitoring Dashboard",
+  "description": "An admin dashboard for monitoring election progress, viewing results, and managing incidents in real-time. It features data visualizations, statistical summaries, and reporting tools.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
